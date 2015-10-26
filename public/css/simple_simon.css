@@ -1,0 +1,122 @@
+.gameBox {
+    width: 430px;
+    height: 430px;
+    position: relative;
+    background-color: black;
+    margin: 100px auto;
+    border-radius: 50%;
+    box-shadow: 50px 50px 50px rgba(0,0,0,0.5);
+}
+.startBox {
+    width: 155px;
+    height: 155px;
+    position: relative; 
+    background-color: black;
+    top: 140px;
+    left: 140px;
+    border-radius: 50%;
+}
+/*.flash {*/
+    /*color: #FFF;*/
+    /*background: #fc79CE;*/
+/*}*/
+button:focus {
+    outline: none;
+}
+/* This is green */
+#green {    
+    width: 200px;
+    height: 200px;
+    background-color: #00CC66;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border-radius: 200px 0 0 0;
+    opacity: .90;
+}
+#green:hover {
+    background-color: #33FF00;
+    opacity: .80;
+}
+#green:active {
+    opacity: .50;
+}
+/* This is red */
+#red {
+    width: 200px;
+    height: 200px;
+    background-color: #CC3333;
+    position: absolute;
+    top: 10px;
+    left: 220px;
+    border-radius: 0 200px 0 0;
+    opacity: .90;
+}
+#red:hover {
+    background-color: #FF0000;
+    opacity: .80;
+}
+#red:active {
+    opacity: .50;
+}
+/* This is yellow*/
+#yellow {
+    width: 200px;
+    height: 200px;
+    background-color: #CCCC00;
+    position: absolute;
+    top: 220px;
+    left: 10px;
+    border-radius: 0 0 0 200px;
+    opacity: .90;
+}
+#yellow:hover {
+    background-color: #FFFF00;
+    opacity: .80;
+}
+#yellow:active {
+    opacity: .50;
+}
+/* This is blue */
+#blue {
+    width: 200px;
+    height: 200px;
+    background-color: #333399;
+    position: absolute;
+    top: 220px;
+    left: 220px;
+    border-radius: 0 0 200px 0;
+    opacity: .90;
+}
+#blue:hover {
+    background-color: #0000FF;
+    opacity: .80;
+}
+#blue:active {
+    opacity: .50;
+}
+.start {
+    width: 135px;
+    height: 135px;
+    background-color: silver;
+    position: absolute;
+    box-sizing: border-box;
+    top: 150px;
+    left: 150px;
+    border-radius: 50%;
+    font-size:22px;
+    line-height:50px;
+    text-align:center;
+    opacity: .90;
+}
+.start:hover {
+    background-color: green;
+    opacity: .99;
+    display: inline;
+} 
+#title {
+    position: relative;
+    font-size: 50px;
+    line-height: 20px;
+    text-align: center;
+}
