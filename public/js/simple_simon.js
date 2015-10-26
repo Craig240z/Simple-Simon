@@ -12,8 +12,7 @@ $('.start').click(function(event) {
 
 $('.button').click(function(event) {
     var userSelection = event.currentTarget.attributes[1].value;
-    playerSequence.push(userSelection);
-    console.log(userSelection);
+    console.log("The user chose to click on button" +  userSelection);
     var userChoice = $(this).attr('data-num');
     compareResults(userChoice);
 });
@@ -32,6 +31,7 @@ function startGame() {
 function getRandomButton() {
     var randomNumber = Math.floor((Math.random() * 4) + 1);
     simonSequence.push(randomNumber);
+    console.log("The following value is the simonSequence array.")
     console.log(simonSequence);
 }
 
@@ -44,18 +44,18 @@ function animateButton(num) {
 }
 
 function compareResults(userChoice) {
-    console.log(userChoice);
+    console.log("The user clicked the buttom with the data-num " + userChoice);
     if (simonSequence[i] != userChoice) {
         gameOver();
     } else if(simonSequence[i] == userChoice && simonSequence.length - 1 == i) {
         i = 0;
-        copy();
+        simonTurn();
     } else if(simonSequence[i] == userChoice) {
         i += 1;
     }
 }
 
-function copy() {
+function simonTurn() {
     getRandomButton();
     startGame();
     $('.start').text('Start Game: ' + simonSequence.length);
@@ -63,7 +63,6 @@ function copy() {
 
 function gameOver() {
     simonSequence = [];
-    playerSequence = [];
     alert('Game Over!');
     location.reload(); 
 }
