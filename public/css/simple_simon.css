@@ -91,13 +91,14 @@ button:focus {
 .start {
     width: 135px;
     height: 135px;
-    background-color: silver;
+    background-color: #000000;
     position: absolute;
     box-sizing: border-box;
     top: 150px;
     left: 150px;
     border-radius: 50%;
     font-size:22px;
+    color: red;
     line-height:50px;
     text-align:center;
     opacity: .90;
